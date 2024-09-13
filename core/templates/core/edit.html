@@ -1,0 +1,15 @@
+<!-- app/templates/app/edit.html -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Edit Passenger</title>
+	</head>
+	<body>
+		<h1>Edit Passenger</h1>
+		<form method="POST">
+			{% csrf_token %} {{ form.as_p }}
+			<button type="submit">Save Changes</button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<!-- app/templates/app/upload.html -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Upload Titanic Dataset</title>
+	</head>
+	<body>
+		<h1>Upload Titanic Excel File</h1>
+		<form method="POST" enctype="multipart/form-data">
+			{% csrf_token %}
+			<input type="file" name="file" required />
+			<button type="submit">Upload</button>
+		</form>
+	</body>
+</html>
