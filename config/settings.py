@@ -88,8 +88,6 @@ import os
 
 # app/settings.py
 
-import os
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
